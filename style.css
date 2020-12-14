@@ -9,10 +9,48 @@ body {
 }
 
 .torres {
-    background-color: black;
+    background-color: white;
     height: 200px;
     width: 33%;
-    border: 1px solid white;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+#corpo {
+    height: 100px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.disco {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#disco0 {
+    width: 25%;
+    background-color: darkgrey;
+}
+
+#disco1 {
+    width: 45%;
+    background-color: blue;
+}
+
+#disco2 {
+    width: 65%;
+    background-color: darkgoldenrod;
+}
+
+#disco3 {
+    background-color: darkorange;
+    width: 85%;
 }
