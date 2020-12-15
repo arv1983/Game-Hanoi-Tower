@@ -1,69 +1,75 @@
-/*#disco {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}*/
-
-body {
-    background-color: blanchedalmond;
-}
-
-.torres {
-    background-color: white;
-    height: 180px;
-    width: 33%;
-    border: 1px solid black;
-    padding: 10px;
-    justify-content: space-between;
-    margin: 10px;
-    align-items: center;
-}
-
-.regras {
+h1 , h2 , h3 {
+    text-shadow: 2px 2px 5px #fb8e8e;
     text-align: center;
+    color: #0000005b;
 }
 
 #resultado {
+    text-shadow: 2px 2px 5px #f5eeee;
     text-align: center;
-    height: 50px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 150px;
-    font-weight: bold;
-    font-size: 20px;
+    color: #0000005b;
+    font-size: 5vw;
 }
 
 #corpo {
-    height: 100px;
+    
+    width: 90%;
+    height: 450px;
+    margin: 1% auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: center;
+    background-image: linear-gradient(#ffffff78, #a3360a5b);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.torres{
+    background-color:#fdfdfdbb;
+    border: outset 2px rgb(114, 128, 156);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height:170px;
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+   
 }
 
 .disco {
     height: 30px;
-    text-align: center;
-    margin: 10px auto;
-    border-radius: 20px;
-    border: 1px solid black;
+    border-radius: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #disco0 {
-    width: 25%;
-    background-color: darkgrey;
+   background-color: #a1a0a0;
+   width: 20%;
 }
 
 #disco1 {
-    width: 45%;
-    background-color: blue;
+    background-color: #e9b08b;
+    width: 35%;
 }
 
 #disco2 {
-    width: 65%;
-    background-color: darkgoldenrod;
+    background-color: #c7bf92;
+    width: 55%;
 }
 
 #disco3 {
-    background-color: darkorange;
-    width: 85%;
+    background-color: #399ce2;
+    width: 80%;
+    
+}
+
+.torres:hover{
+    border:solid 3px rgb(218, 41, 41);
+    
 }
