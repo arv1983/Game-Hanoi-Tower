@@ -36,16 +36,23 @@ for (let i = 0; i < 3; i++) {
                 if (document.getElementById(array[0]).childNodes[0].clientWidth > document.getElementById(array[1]).childNodes[0].clientWidth || document.getElementById(array[1]).childElementCount == 0 ) {
                     console.log('Não aceita1')
 
+                    //var para = document.createElement("P");
+
+                    document.getElementById("resultado").innerHTML = "Voce não pode colocar um disco maior em cima de um menor.";
+
+
 
 
                 } else {
 
                     moverDisco();
                     console.log('aceita1')
+                    document.getElementById("resultado").innerHTML = "Excelente!!";
                 }
             } else {
-                // 
+                document.getElementById("resultado").innerHTML = "Voce selecionou onde não tem discos";
                 if (!document.getElementById(array[0]).childElementCount == 0) {
+                    document.getElementById("resultado").innerHTML = "Boa!!";
                     moverDisco();
                 }
 
@@ -53,7 +60,13 @@ for (let i = 0; i < 3; i++) {
 
             array.length = 0; // zera o array
 
+        } else {
+            document.getElementById("resultado").innerHTML = "selecione para onde quer mover";
         }
+
+
+
+
     }
 
 
@@ -79,8 +92,10 @@ function moverDisco() {
     document.getElementById(array[0]).removeChild(document.getElementById(array[0]).childNodes[0]);// remove
 
 
-    if (document.getElementById(2).childElementCount == 4) { //condição de vitoria
-        alert('ganhou')
+    if (document.getElementById(2).childElementCount == 4) {
+        document.getElementById("resultado").innerHTML = "Parabéns!! Você venceu.";
+
+
     }
 }
 

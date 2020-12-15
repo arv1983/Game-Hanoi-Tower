@@ -1,105 +1,75 @@
-/*#disco {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}*/
-/*
-body {
-    background-color: blanchedalmond;
-}
-
-.torres {
-    background-color: white;
-    height: 200px;
-    width: 33%;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-
-#corpo {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.disco {
-    height: 30px;
+h1 , h2 , h3 {
+    text-shadow: 2px 2px 5px #fb8e8e;
     text-align: center;
-    margin: 10px auto;
-    border-radius: 10px;
-    border: 1px solid black;
+    color: #0000005b;
 }
 
-#disco0 {
-    width: 25%;
-    background-color: darkgrey;
+#resultado {
+    text-shadow: 2px 2px 5px #f5eeee;
+    text-align: center;
+    color: #0000005b;
+    font-size: 5vw;
 }
-
-#disco1 {
-    width: 45%;
-    background-color: blue;
-}
-
-#disco2 {
-    width: 65%;
-    background-color: darkgoldenrod;
-}
-
-#disco3 {
-    background-color: darkorange;
-    width: 85%;
-}*/
-
 
 #corpo {
-    background-color: #999;
+    
     width: 90%;
-    height: 600px;
-    border: 2px solid blue;
-    margin: 3% auto;
+    height: 450px;
+    margin: 1% auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-image: linear-gradient(#ffffff78, #a3360a5b);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .torres{
-    background-image: linear-gradient(#ffffff, rgb(16, 100, 179));
-    height:200px;
+    background-color:#fdfdfdbb;
+    border: outset 2px rgb(114, 128, 156);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height:170px;
     width: 30%;
     margin-right: 2%;
     margin-left: 2%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+   
 }
-
 
 .disco {
     height: 30px;
+    border-radius: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 #disco0 {
-   background-color: #ff9797;
-   width: 30%;
+   background-color: #a1a0a0;
+   width: 20%;
 }
 
 #disco1 {
-    background-color: #ffd399;
-    width: 45%;
+    background-color: #e9b08b;
+    width: 35%;
 }
 
 #disco2 {
-    background-color: #edfb68;
-    width: 60%;
+    background-color: #c7bf92;
+    width: 55%;
 }
 
 #disco3 {
-    background-color: #80f5eb;
-    width: 75%;
+    background-color: #399ce2;
+    width: 80%;
+    
+}
+
+.torres:hover{
+    border:solid 3px rgb(218, 41, 41);
+    
 }
