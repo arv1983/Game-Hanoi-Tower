@@ -33,7 +33,7 @@ for (let i = 0; i < 3; i++) {
 
 
 
-                if (document.getElementById(array[0]).childNodes[0].clientWidth > document.getElementById(array[1]).childNodes[0].clientWidth || document.getElementById(array[1]).childElementCount == 0) {
+                if (document.getElementById(array[0]).childNodes[0].clientWidth > document.getElementById(array[1]).childNodes[0].clientWidth || document.getElementById(array[1]).childElementCount == 0 ) {
                     console.log('Não aceita1')
 
 
@@ -48,21 +48,6 @@ for (let i = 0; i < 3; i++) {
                 console.log('aceita')
             }
 
-            //console.log(document.getElementById(array[1]))
-
-
-
-
-
-
-
-
-
-
-
-
-
-            console.log(array)
             array.length = 0; // zera o array
 
         }
@@ -84,23 +69,17 @@ function moverDisco() {
     disco.setAttribute("class", "disco")
 
 
-    // document.getElementById(array[1]).appendChild(disco); //// problema
-    document.getElementById(array[1]).insertBefore(disco, document.getElementById(array[1]).childNodes[0]); //appendChild(disco);
+    
+    document.getElementById(array[1]).insertBefore(disco, document.getElementById(array[1]).childNodes[0]);
 
-    //console.log('vai criar: ' + document.getElementById(array[0]).firstElementChild.id);
-
-    // remove
-    document.getElementById(array[0]).removeChild(document.getElementById(array[0]).childNodes[0]);
+    
+    document.getElementById(array[0]).removeChild(document.getElementById(array[0]).childNodes[0]);// remove
 
 
-    if (document.getElementById(2).childElementCount == 4) {
+    if (document.getElementById(2).childElementCount == 4) { //condição de vitoria
         alert('ganhou')
     }
 }
-
-
-
-
 
 
 var tabela = document.getElementById('0');
@@ -112,12 +91,3 @@ for (let i = 0; i < 4; i++) {
     tabela.appendChild(disco);
 }
 
-
-
-/// on click na div remove disco 1
-// on click torre 2 ou 3 coloca o disco
-
-
-
-//REMOVE CHILD OK
-// tabela.removeChild(tabela.childNodes[0]);
