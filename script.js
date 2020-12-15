@@ -11,7 +11,7 @@ for (let i = 0; i < 3; i++) {
         array.push(i);
 
         if (array.length == 2) {
-            document.getElementById(array[0]).style.borderColor = 'black';
+            document.getElementById(array[0]).style.borderColor = 'rgb(114, 128, 156)';
 
             if (document.getElementById(array[1]).childElementCount >= 1 && document.getElementById(array[0]).childElementCount != 0) {
 
