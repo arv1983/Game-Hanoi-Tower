@@ -23,8 +23,6 @@ for (let i = 0; i < 3; i++) {
 
                     moverDisco();
 
-
-
                     if (document.getElementById(2).childElementCount == 4) {
                         document.getElementById("resultado").innerHTML = "Parabéns!! Você venceu.";
                     } else {
@@ -63,6 +61,7 @@ function moverDisco() {
 
     document.getElementById(array[1]).insertBefore(disco, document.getElementById(array[1]).childNodes[0]); //appendChild(disco);
     document.getElementById(array[0]).removeChild(document.getElementById(array[0]).childNodes[0]); //remove
+
 
 
 }
