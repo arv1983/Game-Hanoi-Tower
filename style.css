@@ -3,7 +3,7 @@
     flex-direction: column-reverse;
     align-items: center;
 }*/
-
+/*
 body {
     background-color: blanchedalmond;
 }
@@ -55,4 +55,51 @@ body {
 #disco3 {
     background-color: darkorange;
     width: 85%;
+}*/
+
+
+#corpo {
+    background-color: #999;
+    width: 90%;
+    height: 600px;
+    border: 2px solid blue;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.torres{
+    background-image: linear-gradient(#ffffff, rgb(16, 100, 179));
+    height:200px;
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+
+.disco {
+    height: 30px;
+
+}
+
+#disco0 {
+   background-color: #ff9797;
+   width: 30%;
+}
+
+#disco1 {
+    background-color: #ffd399;
+    width: 45%;
+}
+
+#disco2 {
+    background-color: #edfb68;
+    width: 60%;
+}
+
+#disco3 {
+    background-color: #80f5eb;
+    width: 75%;
 }
