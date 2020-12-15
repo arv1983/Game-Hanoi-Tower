@@ -20,11 +20,11 @@ for (let i = 0; i < 3; i++) {
 
             // se width de destino for menor que recebe, tem que negar
 
-            console.log('tamanho: ' + document.getElementById(array[0]).childNodes[0].clientWidth) //pega o tamanho do widh
+
 
             console.log('contagem de disco na div' + document.getElementById(array[1]).childElementCount);
 
-            if (document.getElementById(array[1]).childElementCount >= 1) {
+            if (document.getElementById(array[1]).childElementCount >= 1 && document.getElementById(array[0]).childElementCount != 0) {
                 console.log(document.getElementById(0).childElementCount)
 
                 console.log(document.getElementById(array[1]).childNodes[0].clientWidth)
@@ -41,11 +41,14 @@ for (let i = 0; i < 3; i++) {
                 } else {
 
                     moverDisco();
-                    console.log('aceita')
+                    console.log('aceita1')
                 }
             } else {
-                moverDisco();
-                console.log('aceita')
+                // 
+                if (!document.getElementById(array[0]).childElementCount == 0) {
+                    moverDisco();
+                }
+
             }
 
             //console.log(document.getElementById(array[1]))
