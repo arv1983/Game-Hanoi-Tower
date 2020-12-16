@@ -1,4 +1,6 @@
-h1 , h2 , h3 {
+h1,
+h2,
+h3 {
     text-shadow: 2px 2px 5px #fb8e8e;
     text-align: center;
     color: #0000005b;
@@ -8,11 +10,10 @@ h1 , h2 , h3 {
     text-shadow: 2px 2px 5px #f5eeee;
     text-align: center;
     color: #0000005b;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 #corpo {
-    
     width: 90%;
     height: 450px;
     margin: 1% auto;
@@ -21,36 +22,32 @@ h1 , h2 , h3 {
     align-items: center;
     background-image: linear-gradient(#ffffff78, #a3360a5b);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
-.torres{
-    background-color:#fdfdfdbb;
+.torres {
+    background-color: #fdfdfdbb;
     border: outset 2px rgb(114, 128, 156);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height:170px;
+    height: 170px;
     width: 30%;
     margin-right: 2%;
     margin-left: 2%;
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-end;
-   
+    justify-content: flex-end;
 }
 
 .disco {
     height: 30px;
     border-radius: 4%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 #disco0 {
-   background-color: #a1a0a0;
-   width: 20%;
+    background-color: #a1a0a0;
+    width: 20%;
 }
 
 #disco1 {
@@ -66,10 +63,8 @@ h1 , h2 , h3 {
 #disco3 {
     background-color: #399ce2;
     width: 80%;
-    
 }
 
-.torres:hover{
-    border:solid 3px rgb(218, 41, 41);
-    
+.torres:hover {
+    border: solid 3px red;
 }
