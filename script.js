@@ -11,7 +11,7 @@ for (let i = 0; i < 3; i++) {
         array.push(i);
 
         if (array.length == 2) {
-            document.getElementById(array[0]).style.borderColor = 'rgb(114, 128, 156)';
+
 
             if (document.getElementById(array[1]).childElementCount >= 1 && document.getElementById(array[0]).childElementCount != 0) {
 
@@ -46,7 +46,7 @@ for (let i = 0; i < 3; i++) {
         } else {
 
             document.getElementById("resultado").innerHTML = "selecione para onde quer mover";
-            document.getElementById(array[0]).style.borderColor = 'red';
+
 
         }
 
